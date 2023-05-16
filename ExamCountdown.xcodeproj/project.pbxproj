@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		906953E7966533EC8919F62C /* Pods_ExamCountdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122E7E9098713B893E2CE79C /* Pods_ExamCountdown.framework */; };
 		A9970AC12A13832C00C91BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9970AC02A13832C00C91BA5 /* AppDelegate.swift */; };
 		A9970AC32A13832C00C91BA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9970AC22A13832C00C91BA5 /* SceneDelegate.swift */; };
-		A9970AC52A13832C00C91BA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9970AC42A13832C00C91BA5 /* ViewController.swift */; };
-		A9970AC82A13832C00C91BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9970AC62A13832C00C91BA5 /* Main.storyboard */; };
 		A9970ACA2A13832E00C91BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9970AC92A13832E00C91BA5 /* Assets.xcassets */; };
 		A9970ACD2A13832E00C91BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9970ACB2A13832E00C91BA5 /* LaunchScreen.storyboard */; };
+		A9970ADD2A138A4300C91BA5 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9970ADC2A138A4300C91BA5 /* EventViewController.swift */; };
+		A9970ADF2A138A5D00C91BA5 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9970ADE2A138A5D00C91BA5 /* CountdownViewController.swift */; };
+		A9CB6F7A2A1395DC0069E3D9 /* Gradient+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CB6F792A1395DC0069E3D9 /* Gradient+Extension.swift */; };
+		A9CB6F7C2A139BDC0069E3D9 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CB6F7B2A139BDC0069E3D9 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		122E7E9098713B893E2CE79C /* Pods_ExamCountdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExamCountdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7275EA559529C4F1827A50CB /* Pods-ExamCountdown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamCountdown.release.xcconfig"; path = "Target Support Files/Pods-ExamCountdown/Pods-ExamCountdown.release.xcconfig"; sourceTree = "<group>"; };
+		75FF7C16134E77234BE4F03E /* Pods-ExamCountdown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamCountdown.debug.xcconfig"; path = "Target Support Files/Pods-ExamCountdown/Pods-ExamCountdown.debug.xcconfig"; sourceTree = "<group>"; };
 		A9970ABD2A13832C00C91BA5 /* ExamCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9970AC02A13832C00C91BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9970AC22A13832C00C91BA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9970AC42A13832C00C91BA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A9970AC72A13832C00C91BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9970AC92A13832E00C91BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9970ACC2A13832E00C91BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9970ACE2A13832E00C91BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9970ADC2A138A4300C91BA5 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		A9970ADE2A138A5D00C91BA5 /* CountdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
+		A9CB6F792A1395DC0069E3D9 /* Gradient+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient+Extension.swift"; sourceTree = "<group>"; };
+		A9CB6F7B2A139BDC0069E3D9 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				906953E7966533EC8919F62C /* Pods_ExamCountdown.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C61561A95D0519F2DC9F368 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				122E7E9098713B893E2CE79C /* Pods_ExamCountdown.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A65383C2A8E8C384A3F6C61E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75FF7C16134E77234BE4F03E /* Pods-ExamCountdown.debug.xcconfig */,
+				7275EA559529C4F1827A50CB /* Pods-ExamCountdown.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A9970AB42A13832C00C91BA5 = {
 			isa = PBXGroup;
 			children = (
 				A9970ABF2A13832C00C91BA5 /* ExamCountdown */,
 				A9970ABE2A13832C00C91BA5 /* Products */,
+				A65383C2A8E8C384A3F6C61E /* Pods */,
+				3C61561A95D0519F2DC9F368 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +85,49 @@
 		A9970ABF2A13832C00C91BA5 /* ExamCountdown */ = {
 			isa = PBXGroup;
 			children = (
+				A9970AE02A13957500C91BA5 /* Extensions */,
+				A9970AD42A13879800C91BA5 /* Features */,
 				A9970AC02A13832C00C91BA5 /* AppDelegate.swift */,
 				A9970AC22A13832C00C91BA5 /* SceneDelegate.swift */,
-				A9970AC42A13832C00C91BA5 /* ViewController.swift */,
-				A9970AC62A13832C00C91BA5 /* Main.storyboard */,
 				A9970AC92A13832E00C91BA5 /* Assets.xcassets */,
 				A9970ACB2A13832E00C91BA5 /* LaunchScreen.storyboard */,
 				A9970ACE2A13832E00C91BA5 /* Info.plist */,
 			);
 			path = ExamCountdown;
+			sourceTree = "<group>";
+		};
+		A9970AD42A13879800C91BA5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A9970ADB2A138A3300C91BA5 /* ViewControllers */,
+				A9970ADA2A1388EF00C91BA5 /* Base */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A9970ADA2A1388EF00C91BA5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A9970ADB2A138A3300C91BA5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9970ADC2A138A4300C91BA5 /* EventViewController.swift */,
+				A9970ADE2A138A5D00C91BA5 /* CountdownViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A9970AE02A13957500C91BA5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A9CB6F792A1395DC0069E3D9 /* Gradient+Extension.swift */,
+				A9CB6F7B2A139BDC0069E3D9 /* Color+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9970AD12A13832E00C91BA5 /* Build configuration list for PBXNativeTarget "ExamCountdown" */;
 			buildPhases = (
+				92815A653421206882D48CD9 /* [CP] Check Pods Manifest.lock */,
 				A9970AB92A13832C00C91BA5 /* Sources */,
 				A9970ABA2A13832C00C91BA5 /* Frameworks */,
 				A9970ABB2A13832C00C91BA5 /* Resources */,
+				17C3D31D2E7E9584203D3DEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +192,70 @@
 			files = (
 				A9970ACD2A13832E00C91BA5 /* LaunchScreen.storyboard in Resources */,
 				A9970ACA2A13832E00C91BA5 /* Assets.xcassets in Resources */,
-				A9970AC82A13832C00C91BA5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17C3D31D2E7E9584203D3DEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExamCountdown/Pods-ExamCountdown-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExamCountdown/Pods-ExamCountdown-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExamCountdown/Pods-ExamCountdown-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92815A653421206882D48CD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExamCountdown-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9970AB92A13832C00C91BA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9970AC52A13832C00C91BA5 /* ViewController.swift in Sources */,
+				A9CB6F7A2A1395DC0069E3D9 /* Gradient+Extension.swift in Sources */,
+				A9CB6F7C2A139BDC0069E3D9 /* Color+Extension.swift in Sources */,
+				A9970ADF2A138A5D00C91BA5 /* CountdownViewController.swift in Sources */,
 				A9970AC12A13832C00C91BA5 /* AppDelegate.swift in Sources */,
 				A9970AC32A13832C00C91BA5 /* SceneDelegate.swift in Sources */,
+				A9970ADD2A138A4300C91BA5 /* EventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A9970AC62A13832C00C91BA5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9970AC72A13832C00C91BA5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A9970ACB2A13832E00C91BA5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +383,7 @@
 		};
 		A9970AD22A13832E00C91BA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75FF7C16134E77234BE4F03E /* Pods-ExamCountdown.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +394,6 @@
 				INFOPLIST_FILE = ExamCountdown/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +411,7 @@
 		};
 		A9970AD32A13832E00C91BA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7275EA559529C4F1827A50CB /* Pods-ExamCountdown.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +422,6 @@
 				INFOPLIST_FILE = ExamCountdown/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

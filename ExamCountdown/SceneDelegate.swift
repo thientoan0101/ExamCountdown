@@ -16,7 +16,51 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: windowScene)
+        
+        // init view controller
+        let countdownVC = CountdownViewController()
+        let countdownNavi = UINavigationController(rootViewController: countdownVC)
+        countdownVC.tabBarItem = UITabBarItem(title: "Đếm ngược", image: UIImage(systemName: "timer"), tag: 0)
+        
+        let eventVC = EventViewController()
+        let eventNavi = UINavigationController(rootViewController: eventVC)
+        eventVC.tabBarItem = UITabBarItem(title: "Sự kiện", image: UIImage(systemName: "calendar.circle"), selectedImage: UIImage(systemName: "calendar.circle.fill"))
+        
+        
+        let tabbarVC = UITabBarController()
+        tabbarVC.viewControllers = [countdownNavi, eventNavi]
+        tabbarVC.tabBar.backgroundColor = UIColor.white
+        tabbarVC.tabBar.layer.shadowColor = UIColor.gray.cgColor
+        
+        tabbarVC.tabBar.layer.shadowOffset = CGSize(width: 0, height: -3)
+        tabbarVC.tabBar.layer.shadowRadius = 6
+        tabbarVC.tabBar.layer.shadowOpacity = 0.3
+        tabbarVC.tabBar.layer.masksToBounds = false
+        
+        
+        // Create a gradient layer
+//        let gradientLayer = CAGradientLayer()
+//        gradientLayer.colors = [UIColor.yellow.cgColor, UIColor.blue.cgColor]
+//        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+//        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+        
+        // Customize the navigation bar appearance
+        let appearance = UINavigationBarAppearance()
+//        appearance.backgroundImage = gradientLayer.createGradientImage()
+        let gradientView = GradientView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64), fromColor: UIColor(hex: "#FF0085FF")?.cgColor ?? UIColor.blue.cgColor, toColor: UIColor(hex: "#FF00ACF4")?.cgColor ?? UIColor.white.cgColor)
+        let backgroundImage = gradientView.asImage()
+        appearance.backgroundImage = backgroundImage
+        
+        // Apply the appearance to all navigation bars
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        
+        window.rootViewController = tabbarVC
+        self.window = window
+        window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
