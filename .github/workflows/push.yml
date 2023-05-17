@@ -57,4 +57,4 @@ jobs:
     needs: test
     runs-on: macos-11
     steps:
-      run: echo "Hello world"
+      - run: echo "Hello world"
