@@ -1,3 +1,7 @@
+# Overview
+This project is an exam countdown. Beside that, this repo is used to practice CI/CD and submit app.
+
+
 fastlane documentation
 ----
 
