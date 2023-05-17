@@ -1,4 +1,4 @@
-name: Pull Request
+name: Push
 
 on:
   push:
@@ -52,3 +52,9 @@ jobs:
       - name: Run Tests (Cache)
         if: steps.setup.outputs.cache-hit == 'true'
         run: bundle exec fastlane tests skip_package_dependencies_resolution:true
+  
+  log:
+    needs: test
+    runs-on: macos-11
+    steps:
+      run: echo "Hello world"
