@@ -47,15 +47,14 @@ jobs:
 
   test:
     needs: setup
+    runs-on: macos-12
     steps:
-      - uses: actions/checkout@v2
-
       - name: Run Tests
         run: |
           if [ -z "${{ steps.setup.outputs.cache-hit }}" ]; then
-            bundle exec fastlane tests
+            fastlane tests
           else
-            bundle exec fastlane tests skip_package_dependencies_resolution:true
+            fastlane tests skip_package_dependencies_resolution:true
           fi
 
   log:
