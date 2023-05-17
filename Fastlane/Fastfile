@@ -20,7 +20,6 @@ platform :ios do
       scan(
         workspace: 'ExamCountdown.xcworkspace',
         scheme: 'ExamCountdown',
-        device: 'iPhone 11 Pro',
         clean: true,
         code_coverage: true,
         output_types: "junit",
