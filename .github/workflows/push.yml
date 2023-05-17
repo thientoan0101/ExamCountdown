@@ -12,7 +12,6 @@ on:
 jobs:
   setup:
     runs-on: macos-12
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
     steps:
       - uses: actions/checkout@v2
 
@@ -49,7 +48,7 @@ jobs:
     needs: setup
     runs-on: macos-12
     steps:
-      - uses: actions/checkout@v2
+      # - uses: actions/checkout@v2
 
       - name: Run Tests
         run: bundle exec fastlane tests
@@ -64,6 +63,6 @@ jobs:
   
   log:
     needs: test
-    runs-on: macos-11
+    runs-on: macos-12
     steps:
       - run: echo "Hello world"
