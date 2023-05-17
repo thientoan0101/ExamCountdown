@@ -1,7 +1,7 @@
 # For more information about this configuration visit
 # https://github.com/fastlane/scan#scanfile
 
-workspace "ExamCountdown.xcodeproj/project.xcworkspace"
+workspace "ExamCountdown.xcworkspace"
 scheme "ExamCountdown"
 sdk "iphonesimulator"
 device "iPhone 11 Pro"
