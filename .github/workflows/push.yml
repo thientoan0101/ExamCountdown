@@ -56,7 +56,7 @@ jobs:
         run: bundle exec fastlane tests skip_package_dependencies_resolution:true
   
   log:
-    needs: test
+    needs: setup
     runs-on: macos-12
     steps:
       - run: echo "Hello world"
