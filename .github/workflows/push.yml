@@ -44,12 +44,6 @@ jobs:
           key: ${{ runner.os }}-deps-v1-${{ hashFiles('BILDsolid.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
           restore-keys: ${{ runner.os }}-deps-v1-
 
-  test:
-    needs: setup
-    runs-on: macos-12
-    steps:
-      # - uses: actions/checkout@v2
-
       - name: Run Tests
         run: bundle exec fastlane tests
 
