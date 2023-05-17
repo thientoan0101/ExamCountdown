@@ -53,7 +53,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          if [[ -z "${{ steps.setup.outputs.cache-hit }}" ]]; then
+          if [ -z "${{ steps.setup.outputs.cache-hit }}" ]; then
             bundle exec fastlane tests
           else
             bundle exec fastlane tests skip_package_dependencies_resolution:true
