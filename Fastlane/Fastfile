@@ -1,12 +1,32 @@
 fastlane_version '2.157'
 default_platform :ios
 
+# Variable
+DERIVED_DATA_PATH = "#{ENV['CIRCLE_DERIVED_DATA_PATH']}"
+TESTS_REPORTS_PATH = "#{ENV['CIRCLE_TESTS_REPORTS_PATH']}"
+LOG_PATH = "#{ENV['CIRCLE_LOG_PATH']}"
+WORKSPACE = "#{ENV['ZALOPAY_APP_XCODE_WORKSPACE']}"
+PROJECT = "#{ENV['ZALOPAY_APP_XCODE_PROJECT']}"
+
 platform :ios do
-    desc 'Builds project and executes unit tests'
-    lane :unit_test do |options|
+    lane :install_pods do
+      cocoapods(
+          clean: true,
+          use_bundle_exec: false
+    )
+    end
+
+    lane :tests do
       scan(
-        clean: options[:clean],
-        skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution]
+        workspace: 'ExamCountdown.xcworkspace',
+        scheme: 'ExamCountdown',
+        device: 'iPhone 11 Pro',
+        clean: true,
+        code_coverage: true,
+        output_types: "junit",
+        output_directory: TESTS_REPORTS_PATH,
+        derived_data_path: DERIVED_DATA_PATH,
+        buildlog_path: LOG_PATH
       )
     end
 end
