@@ -19,6 +19,7 @@ class CountdownViewController: UIViewController, UIPickerViewDelegate {
     let sloganLabel: UILabel = {
         let label = UILabel()
         label.text = "Cố gắng hết mình nhé"
+        label.textColor = .black
         return label
     }()
     
@@ -56,6 +57,7 @@ class CountdownViewController: UIViewController, UIPickerViewDelegate {
         let label = UILabel()
         label.text = "24/12/2023"
         label.font = .systemFont(ofSize: 20)
+        label.textColor = .black
         return label
     }()
     
@@ -149,7 +151,7 @@ class CountdownViewController: UIViewController, UIPickerViewDelegate {
         
         deadlineLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().offset(-120)
+            make.bottom.equalToSuperview().offset(-150)
         }
         
         ngaythiLabel.snp.makeConstraints { make in
