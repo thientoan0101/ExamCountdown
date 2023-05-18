@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		906953E7966533EC8919F62C /* Pods_ExamCountdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122E7E9098713B893E2CE79C /* Pods_ExamCountdown.framework */; };
+		A9373A4B2A153F2B00C70309 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9373A4A2A153F2B00C70309 /* GoogleService-Info.plist */; };
+		A9373A4C2A153F2B00C70309 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9373A4A2A153F2B00C70309 /* GoogleService-Info.plist */; };
 		A9970AC12A13832C00C91BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9970AC02A13832C00C91BA5 /* AppDelegate.swift */; };
 		A9970AC32A13832C00C91BA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9970AC22A13832C00C91BA5 /* SceneDelegate.swift */; };
 		A9970ACA2A13832E00C91BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9970AC92A13832E00C91BA5 /* Assets.xcassets */; };
@@ -33,6 +35,7 @@
 		122E7E9098713B893E2CE79C /* Pods_ExamCountdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExamCountdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7275EA559529C4F1827A50CB /* Pods-ExamCountdown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamCountdown.release.xcconfig"; path = "Target Support Files/Pods-ExamCountdown/Pods-ExamCountdown.release.xcconfig"; sourceTree = "<group>"; };
 		75FF7C16134E77234BE4F03E /* Pods-ExamCountdown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamCountdown.debug.xcconfig"; path = "Target Support Files/Pods-ExamCountdown/Pods-ExamCountdown.debug.xcconfig"; sourceTree = "<group>"; };
+		A9373A4A2A153F2B00C70309 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9970ABD2A13832C00C91BA5 /* ExamCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9970AC02A13832C00C91BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9970AC22A13832C00C91BA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 		A9970ABF2A13832C00C91BA5 /* ExamCountdown */ = {
 			isa = PBXGroup;
 			children = (
+				A9373A4A2A153F2B00C70309 /* GoogleService-Info.plist */,
 				A9970AE02A13957500C91BA5 /* Extensions */,
 				A9970AD42A13879800C91BA5 /* Features */,
 				A9970AC02A13832C00C91BA5 /* AppDelegate.swift */,
@@ -244,6 +248,7 @@
 			files = (
 				A9970ACD2A13832E00C91BA5 /* LaunchScreen.storyboard in Resources */,
 				A9970ACA2A13832E00C91BA5 /* Assets.xcassets in Resources */,
+				A9373A4B2A153F2B00C70309 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9373A4C2A153F2B00C70309 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,8 +469,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = MZ8ZBRWR4D;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExamCountdown/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -492,8 +499,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = MZ8ZBRWR4D;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExamCountdown/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -519,7 +527,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = MZ8ZBRWR4D;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
@@ -538,7 +546,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = MZ8ZBRWR4D;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
