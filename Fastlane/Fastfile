@@ -1,6 +1,6 @@
 fastlane_version '2.157'
 default_platform :ios
-
+xcversion(version: "13.4.1") # Selects Xcode 8.1.0
 # Variable
 DERIVED_DATA_PATH = "#{ENV['CIRCLE_DERIVED_DATA_PATH']}"
 TESTS_REPORTS_PATH = "#{ENV['CIRCLE_TESTS_REPORTS_PATH']}"

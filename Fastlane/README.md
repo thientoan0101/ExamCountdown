@@ -31,14 +31,6 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 
 
-### ios build
-
-```sh
-[bundle exec] fastlane ios build
-```
-
-
-
 ### ios build_ipa
 
 ```sh
