@@ -49,7 +49,18 @@ platform :ios do
         release_notes_file: ENV['RELEASE_NOTES_FILE'],
         # service_credentials_file: "Fastlane/examcountdown.json",
         ipa_path: "Build/countdown.ipa",
+        groups: "qc, dev",
         debug: true
+      )
+    end
+
+    lane :increment_version do
+      # latest_release = firebase_app_distribution_get_latest_release(
+      #   app: ENV["FIREBASE_APP_ID"],
+      #   firebase_cli_token: "1//0e-jAs3cu-UxACgYIARAAGA4SNwF-L9IrWZF9vQgLnKbygVYDcbrpU13iu8egJRLXqEEQTFXV5gPN_UoxSwyjvQmQBEkiwtExh_s",
+      # )
+      increment_build_number(
+        # bump_type: "minor"
       )
     end
 end

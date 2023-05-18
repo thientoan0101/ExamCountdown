@@ -18,7 +18,7 @@ class CountdownViewController: UIViewController, UIPickerViewDelegate {
     
     let sloganLabel: UILabel = {
         let label = UILabel()
-        label.text = "Cố gắng hết mình nhé"
+        label.text = "Cố gắng hết mình nhé."
         label.textColor = .black
         return label
     }()
