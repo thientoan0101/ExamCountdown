@@ -62,5 +62,8 @@ jobs:
       - name: Build ipa
         run: bundle exec fastlane build_ipa
 
+      - name: Build ipa
+        run: bundle exec fastlane increment_version
+
       - name: submit firebase
         run: bundle exec fastlane submit_firebase
