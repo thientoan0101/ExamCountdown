@@ -1,7 +1,7 @@
 name: PULL REQUEST
 
 on:
-  push:
+  pull_request:
     branches:
       - 'main'
       - 'develop'
@@ -45,7 +45,7 @@ jobs:
           key: ${{ runner.os }}-deps-v1-${{ hashFiles('BILDsolid.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
           restore-keys: ${{ runner.os }}-deps-v1-
 
-  test:
+  distribute:
     needs: setup
     runs-on: macos-12
     steps:
@@ -59,8 +59,11 @@ jobs:
       - name: Install Fastlane
         run: gem install fastlane
 
-      - name: Run Tests
-        run: bundle exec fastlane tests
+      - name: Build ipa
+        run: bundle exec fastlane build_ipa
+
+      - name: submit firebase
+        run: bundle exec fastlane submit_firebase
         
   log:
     needs: test
