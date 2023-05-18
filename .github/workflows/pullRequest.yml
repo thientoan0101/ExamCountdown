@@ -64,9 +64,3 @@ jobs:
 
       - name: submit firebase
         run: bundle exec fastlane submit_firebase
-        
-  log:
-    needs: test
-    runs-on: macos-11
-    steps:
-      - run: echo "Hello world"
